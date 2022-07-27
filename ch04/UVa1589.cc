@@ -40,7 +40,7 @@ vector<Point>
 
 bool inBPalace(const Point& bPos) { return inRange(bPos.x, 1, 3) && inRange(bPos.y, 4, 6); }
 
-// p1能不能直接飞到p2，中间有sz个妻子
+// p1能不能直接飞到p2，中间有sz个棋子
 bool canFly(const Point& p1, const Point& p2, int sz = 0) {
     bool v = (p1.x == p2.x), h = (p1.y == p2.y);
     assert(v || h); assert(!(v&&h));
